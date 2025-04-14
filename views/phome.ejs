@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Patient Dashboard | Suraksha</title>
+</head>
+<body class="bg-gradient-to-r from-gray-800 to-blue-800 text-white min-h-screen font-sans flex flex-col">
 
+  <!-- Navbar -->
+  <nav class="bg-blue-950 bg-opacity-90 text-white py-4 shadow-lg fixed top-0 w-full z-50">
+    <div class="flex justify-between items-center px-10">
+      <div class="flex items-center space-x-3">
+        <img src="/images/logo.png" alt="Logo" class="h-10 w-10 rounded-full">
+        <span class="text-2xl font-bold tracking-wide">Suraksha</span>
+      </div>
+      <div class="space-x-6 text-sm md:text-base font-medium">
+        <a href="/patient-home.html" class="hover:text-green-300">Home</a>
+        <a href="/doctors.html" class="hover:text-green-300">Doctors</a>
+        <a href="/appointments.html" class="hover:text-green-300">Appointments</a>
+        <a href="/profile.html" class="hover:text-green-300">Profile</a>
+        <a href="/logout" class="hover:text-red-400">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Section -->
+  <main class="flex-grow pt-32 px-6 max-w-6xl mx-auto text-center">
+    <!-- Welcome Section -->
+    <h1 class="text-4xl font-extrabold text-white mb-6">Welcome, <%= full_name %> 👨‍⚕️</h1>
+    <p class="text-lg text-gray-200 mb-10">Your trusted health companion. Manage appointments, connect with doctors, and track your medical history — all in one place.</p>
+
+    <!-- Action Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Book Appointment -->
+      <a href="/book-appointment.html" class="bg-white/10 backdrop-blur-md p-6 rounded-xl hover:scale-105 transition shadow-lg text-white">
+        <h2 class="text-xl font-semibold text-green-300 mb-2">Book Appointment</h2>
+        <p class="text-gray-200">Find available doctors and schedule your appointments quickly</p>
+      </a>
+      
+      <!-- My Doctors -->
+      <a href="/doctors.html" class="bg-white/10 backdrop-blur-md p-6 rounded-xl hover:scale-105 transition shadow-lg text-white">
+        <h2 class="text-xl font-semibold text-green-300 mb-2">My Doctors</h2>
+        <p class="text-gray-200">Browse your list of doctors and manage your health care team</p>
+      </a>
+      
+      <!-- My Appointments -->
+      <a href="/appointments.html" class="bg-white/10 backdrop-blur-md p-6 rounded-xl hover:scale-105 transition shadow-lg text-white">
+        <h2 class="text-xl font-semibold text-green-300 mb-2">My Appointments</h2>
+        <p class="text-gray-200">View and manage your upcoming visits</p>
+      </a>
+    </div>
+
+    <!-- Additional Action Buttons -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+      <!-- Disease Prediction Button -->
+    <!-- Disease Prediction Button with Info Note -->
+<a href="/disease-prediction.html" class="bg-green-600 hover:bg-green-700 text-white p-6 rounded-xl text-left shadow-lg transform transition-all hover:scale-105 relative">
+  <h2 class="text-xl font-semibold mb-2">🧠 Disease Prediction</h2>
+  <p class="text-gray-100 mb-3">
+    Predict possible diseases based on your symptoms using AI.
+  </p>
+  <div class="text-sm text-green-100 bg-green-800/60 p-3 rounded-md border border-green-300">
+    <strong>How it works:</strong> 
+    Enter your symptoms, and our AI model analyzes patterns to suggest potential diseases. This is not a diagnosis — always consult a doctor for medical advice.
+  </div>
+</a>
+
+
+      <!-- Chatbot Button -->
+      <!-- Chatbot Button with Info Note -->
+<a href="/chatbot.html" class="bg-blue-600 hover:bg-blue-700 text-white p-6 rounded-xl text-left shadow-lg transform transition-all hover:scale-105 relative">
+  <h2 class="text-xl font-semibold mb-2">💬 Chat with Healthcare Bot</h2>
+  <p class="text-gray-100 mb-3">
+    Talk to our virtual assistant for instant health support and answers.
+  </p>
+  <div class="text-sm text-blue-100 bg-blue-800/60 p-3 rounded-md border border-blue-300">
+    <strong>How it works:</strong> 
+    Ask health-related questions — from symptoms to wellness tips. The bot provides quick, AI-powered answers. For serious issues, always consult a real doctor.
+  </div>
+</a>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center p-6 mt-20 border-t border-gray-700">
+    <p class="font-semibold text-sm">Suraksha Web App © 2024 | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
