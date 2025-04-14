@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Suraksha Web App</title>
+</head>
+<body class="bg-gradient-to-r from-green-200 to-blue-300 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-900 text-white py-3 shadow-lg fixed w-full top-0 z-50">
+        <div class="flex justify-around items-center space-x-6">
+            <img src="/images/logo.png " class="h-16 w-16 bg-white rounded">
+            <a class="hover:text-red-500 transition duration-300 font-semibold" href="#">Home</a>
+            <a class="hover:text-red-500 transition duration-300 font-semibold" href="/plogin">Patient Login</a>
+            <a class="hover:text-red-500 transition duration-300 font-semibold" href="/dlogin">Doctor Login</a>
+            <a href="#" class="bg-red-600 text-white px-4 py-2 rounded-lg font-semibold shadow-md hover:bg-red-700 transition">
+                Get Started
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="flex flex-col md:flex-row items-center justify-around text-center p-8 pt-40">
+        <img src="/images/logo.png" class="mb-4 h-40 w-40 md:h-60 md:w-60 ">
+        <div>
+            <h1 class="text-5xl font-black text-blue-900">Suraksha Web App</h1>
+            <p class="text-xl text-gray-700 mt-2 max-w-lg">
+                AI-powered medical assistant and secure cloud storage for medical records. Stay connected with doctors anytime, anywhere!
+            </p>
+            <a href="#" class="mt-5 inline-block bg-red-600 text-white px-6 py-3 rounded-lg text-lg font-semibold shadow-md hover:bg-red-700 transition">
+                Try Now
+            </a>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="py-10 bg-white">
+        <h2 class="text-3xl font-bold text-center text-blue-900">Why Choose Suraksha?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-10 mt-8 text-center">
+            <div class="p-6 bg-green-100 rounded-lg shadow-md hover:shadow-lg transition">
+                <img src="/images/secure.png" class="h-16 mx-auto">
+                <h3 class="text-xl font-semibold mt-4 text-black">Secure Records</h3>
+                <p class="text-gray-600">Store your medical history safely in the cloud.</p>
+            </div>
+            <div class="p-6 bg-blue-100 rounded-lg shadow-md hover:shadow-lg transition">
+                <img src="/images/ai.png" class="h-16 mx-auto">
+                <h3 class="text-xl font-semibold mt-4 text-black">AI Assistant</h3>
+                <p class="text-gray-600">Get instant AI-powered medical suggestions.</p>
+            </div>
+            <div class="p-6 bg-red-100 rounded-lg shadow-md hover:shadow-lg transition">
+                <img src="/images/doctor.png" class="h-16 mx-auto">
+                <h3 class="text-xl font-semibold mt-4 text-black">Doctor Connectivity</h3>
+                <p class="text-gray-600">Connect with doctors anytime, anywhere.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white text-center p-6 mt-10">
+        <p class="font-semibold">Suraksha Web App © 2024 | All Rights Reserved</p>
+        <div class="flex justify-center space-x-4 mt-3">
+            <a href="#"><img src="facebook.png" class="h-6 w-6"></a>
+            <a href="#"><img src="twitter.png" class="h-6 w-6"></a>
+            <a href="#"><img src="linkedin.png" class="h-6 w-6"></a>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Doctor Sign Up - Suraksha</title>
+</head>
+<body class="bg-gradient-to-r from-green-200 to-blue-300 text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-900 text-white py-3 shadow-lg fixed w-full top-0 z-50">
+    <div class="flex justify-between items-center px-10">
+      <div class="flex items-center space-x-4">
+        <img src="logo.png" class="h-12 w-12" alt="Logo" />
+        <span class="text-xl font-bold">Suraksha</span>
+      </div>
+      <div class="space-x-6">
+        <a href="home.html" class="hover:text-red-500 transition">Home</a>
+        <a href="plogin.html" class="hover:text-red-500 transition">Patient Login</a>
+        <a href="dlogin.html" class="hover:text-red-500 transition">Doctor Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Doctor Sign Up -->
+  <div class="flex justify-center items-center min-h-screen pt-28 pb-10">
+    <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-lg">
+      <h2 class="text-2xl font-bold text-blue-900 text-center">Doctor Sign Up</h2>
+      <form class="mt-5 space-y-4" action="/dsignup" method="POST">
+  
+        <input type="text" name="full_name" placeholder="Full Name" class="w-full p-3 border rounded-lg focus:ring-blue-500" required />
+  
+        <input type="text" name="username" placeholder="Username" class="w-full p-3 border rounded-lg focus:ring-blue-500" required />
+  
+        <input type="email" name="email" placeholder="Email" class="w-full p-3 border rounded-lg focus:ring-blue-500" required />
+  
+        <input type="password" name="password" placeholder="Password" class="w-full p-3 border rounded-lg focus:ring-blue-500" required />
+  
+        <input type="text" name="registration_number" placeholder="Medical Registration Number" class="w-full p-3 border rounded-lg focus:ring-blue-500" required />
+  
+        <input type="tel" name="phone" placeholder="Phone Number" class="w-full p-3 border rounded-lg focus:ring-blue-500" required />
+  
+        <input type="text" name="city" placeholder="City" class="w-full p-3 border rounded-lg focus:ring-blue-500" required />
+  
+        <textarea name="clinic_address" placeholder="Clinic/Hospital Address" class="w-full p-3 border rounded-lg focus:ring-blue-500" required></textarea>
+  
+        <select name="specialization" class="w-full p-3 border rounded-lg focus:ring-blue-500" required>
+          <option value="">Select Specialization</option>
+          <option value="Cardiology">Cardiology</option>
+          <option value="Dermatology">Dermatology</option>
+          <option value="Neurology">Neurology</option>
+          <option value="Pediatrics">Pediatrics</option>
+          <option value="Orthopedics">Orthopedics</option>
+          <option value="General Surgery">General Surgery</option>
+          <option value="Psychiatry">Psychiatry</option>
+          <option value="Radiology">Radiology</option>
+          <option value="ENT">ENT</option>
+          <option value="Oncology">Oncology</option>
+        </select>
+  
+        <input type="number" name="experience" placeholder="Years of Experience" class="w-full p-3 border rounded-lg focus:ring-blue-500" />
+  
+        <button type="submit" class="w-full mt-4 bg-red-600 text-white py-2 rounded-lg font-semibold hover:bg-red-700 transition">Sign Up</button>
+      </form>
+  
+      <p class="text-center mt-4">Already a doctor? <a href="/dlogin" class="text-blue-600 font-bold">Login here</a></p>
+    </div>
+  </div>
+  
+
+  <footer class="bg-black text-white text-center p-6">
+    <p class="font-semibold">Suraksha Web App © 2024 | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

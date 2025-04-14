@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>patient Login Suraksha</title>
+</head>
+<body class="bg-gradient-to-r from-green-200 to-blue-300 text-gray-900">
+    
+    <!-- Navbar -->
+    <nav class="bg-blue-900 text-white py-3 shadow-lg fixed w-full top-0 z-50">
+        <div class="flex justify-between items-center px-10">
+            <div class="flex items-center space-x-4">
+                <img src="logo.png" class="h-12 w-12">
+                <span class="text-xl font-bold">Suraksha</span>
+            </div>
+            <div class="space-x-6">
+                <a class="hover:text-red-500 transition duration-300" href="home.html">Home</a>
+                <a class="hover:text-red-500 transition duration-300" href="plogin.html">Patient Login</a>
+                <a class="hover:text-red-500 transition duration-300" href="dlogin.html">Doctor Login</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Login & Signup Section -->
+    <div class="flex justify-center items-center min-h-screen pt-24">
+        <div class="bg-white p-8 rounded-xl shadow-lg w-96">
+            <h2 class="text-2xl font-bold text-blue-900 text-center">Patient Login</h2>
+            <form class="mt-5" action="/plogin" method="POST">
+                <label class="block mb-2 font-semibold">username</label>
+                <input type="text" placeholder="Enter your username/id" name="username" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                
+                <label class="block mt-4 mb-2 font-semibold">Password</label>
+                <input type="password" placeholder="Enter your password" name="password" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                
+                <button class="w-full mt-5 bg-red-600 text-white py-2 rounded-lg font-semibold hover:bg-red-700 transition">Login</button>
+            </form>
+            <p class="text-center mt-4">Don't have an account? <a href="/psignup" class="text-blue-600 font-bold">Sign Up</a></p>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-black text-white text-center p-6 mt-10">
+        <p class="font-semibold">Suraksha Web App © 2024 | All Rights Reserved</p>
+    </footer>
+    
+</body>
+</html>
